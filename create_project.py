@@ -81,8 +81,10 @@ def create_project(config, app_root_src):
     helper.copy_folder(TEMPLATE_DIR, app_root_dst)
     replace_files_content(app_root_dst, config)
     helper.copy_awtk_files(awtk_dst_source_dir)
+    helper.copy_file(helper.join_path(AWTK_ROOT, "scripts/awtk_mobile_common.mk"), helper.join_path(app_root_dst, "entry/src/main/cpp/awtk_common.mk"))
     helper.copy_app_sources(config, app_dst_source_dir, app_root_src)
     helper.create_assets_zip(app_root_src, app_root_dst, assets_dst_dir)
+    helper.update_cmake_file(config, helper.join_path(app_root_dst, "entry/src/main/cpp/CMakeLists.txt"))
 
     show_result(app_name)
 

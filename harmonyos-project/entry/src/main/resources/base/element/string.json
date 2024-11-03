@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "AWTK APP"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "AWTK APP"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "awtktitle"
+    }
+  ]
+}

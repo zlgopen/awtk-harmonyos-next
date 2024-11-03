@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "AWTK应用程序"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "AWTK应用程序"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "awtktitle"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "awtk_harmony",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "libawtk_napi.so": "file:./src/main/cpp/types/libentry"
+  }
+}

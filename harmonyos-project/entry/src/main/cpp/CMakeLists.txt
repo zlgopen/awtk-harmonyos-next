@@ -20,7 +20,6 @@ cmake_minimum_required(VERSION 3.4.1)
 project(awtk_napi)
 
 set(NATIVE_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
-set(APP_SOURCE_DIR "${NATIVE_ROOT_PATH}/app")
 
 include(awtk_common.mk)
 
@@ -46,15 +45,6 @@ file(GLOB AWTK_PORT_SOURCE_FILES
 set(AWTK_APP_FLAGS "-DUSE_GUI_MAIN ")
 set(CMAKE_C_FLAGS "${AWTK_FLAGS} ${AWTK_APP_FLAGS} EXTRA_CFLAGS")
 set(CMAKE_CXX_FLAGS "${AWTK_FLAGS} ${AWTK_APP_FLAGS} EXTRA_CPPFLAGS")
-
-file(GLOB AWTK_APP_SOURCE_FILES 
-  app/*.c
-  app/*.cpp
-  app/**/*.c
-  app/**/*.cpp
-  app/**/**/*.c
-  app/**/**/*.cpp
-)
 
 # build shared library
 add_library(awtk_napi SHARED

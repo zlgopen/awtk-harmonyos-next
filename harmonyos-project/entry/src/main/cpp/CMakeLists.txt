@@ -57,7 +57,7 @@ add_library(awtk_napi SHARED
             napi_manager.cpp
             napi_util.cpp)
 
-# link OpenHarmony native library （Use OpenGL）
+# link OpenHarmony native library
 target_link_libraries(awtk_napi PUBLIC EGL)
 target_link_libraries(awtk_napi PUBLIC GLESv3)
 target_link_libraries(awtk_napi PUBLIC hilog_ndk.z)

@@ -99,7 +99,7 @@ int32_t AwtkApp::Init(const char *filesDir, const char *tempDir, int32_t screenD
 
     locale_info_change_simple(language);
     system_info_set_font_scale(system_info(), fontScale);
-    system_info_set_default_font(system_info(), "default_full");
+    system_info_set_default_font(system_info(), AWTK_DEFAULT_FONT);
 
     tk_ext_widgets_init();
     native_window_harmony_init(this);
